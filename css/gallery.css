@@ -1,0 +1,50 @@
+.photo-carousel .photo-inner {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.photo-carousel .photo-inner img {
+    transition: transform 0.5s ease;
+    width: 100%;
+    height: auto;
+}
+
+.photo-carousel .photo-inner:hover img {
+    transform: scale(1.05);
+}
+
+.photo-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.7);
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.photo-item:hover .photo-caption {
+    transform: translateY(0);
+}
+
+.owl-dots {
+    margin-top: 20px !important;
+    text-align: center;
+}
+
+.owl-dot {
+    display: inline-block;
+    margin: 0 5px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.owl-dot.active {
+    border-color: #4a6cf7;
+}
